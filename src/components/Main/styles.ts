@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerMain = styled.main`
+  color: ${(props) => props.theme['cinza-100']};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +11,6 @@ export const ContainerMain = styled.main`
     line-height: 3rem;
   }
 `
-export const ContainerTabela = styled.section`
-  margin-right: 14rem;
+export const ContainerTabelaGrafico = styled.section`
+  display: inline-flex;
 `

@@ -1,4 +1,5 @@
 import { Tab } from './styles'
+
 export function Tabela() {
   return (
     <Tab>
@@ -36,7 +37,7 @@ export function Tabela() {
           <td>20%</td>
         </tr>
         <tr>
-          <td>1</td>
+          <td>5</td>
           <td>Anderson</td>
           <td>Santos</td>
           <td>40%</td>

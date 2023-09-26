@@ -1,6 +1,7 @@
-import { ContainerMain, ContainerTabela } from './styles'
+import { ContainerMain, ContainerTabelaGrafico } from './styles'
 
 import { Tabela } from '../Tabela'
+import Grafico from '../Grafico'
 
 export function Main() {
   return (
@@ -9,9 +10,10 @@ export function Main() {
         <h1>DATA</h1>
         <p>Lorem ipsum dolor sit amet quibusdam reiciendis fugit quas.</p>
       </caption>
-      <ContainerTabela>
+      <ContainerTabelaGrafico>
         <Tabela />
-      </ContainerTabela>
+        <Grafico />
+      </ContainerTabelaGrafico>
     </ContainerMain>
   )
 }

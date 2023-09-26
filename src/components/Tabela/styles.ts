@@ -1,15 +1,18 @@
 import { styled } from 'styled-components'
 
 export const Tab = styled.table`
+  color: ${(props) => props.theme['cinza-100']};
+  margin: 0.5rem;
+  font-size: 0.8rem;
   text-align: left;
-  width: 50rem;
+  width: 30rem;
   border-collapse: collapse;
-  thead {
-    width: 10rem;
+  tr > td {
+    height: 5px;
   }
   th,
   td {
-    padding: 1rem;
+    padding: 0.8rem;
     border-collapse: collapse;
     border: 1px solid ${(props) => props.theme['cinza-100']};
   }
