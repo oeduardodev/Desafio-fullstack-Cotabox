@@ -1,4 +1,5 @@
 import { Tab } from './styles'
+import dados from '../../../api/dados.js'
 
 export function Tabela() {
   return (
@@ -12,36 +13,14 @@ export function Tabela() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Carlos</td>
-          <td>Moura</td>
-          <td>5%</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Fernanda</td>
-          <td>Oliveira</td>
-          <td>15%</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Hugo</td>
-          <td>Silva</td>
-          <td>20%</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Eliza</td>
-          <td>Solza</td>
-          <td>20%</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Anderson</td>
-          <td>Santos</td>
-          <td>40%</td>
-        </tr>
+        {dados.map((data) => (
+          <tr key={data.id}>
+            <td>{data.id}</td>
+            <td>{data.firstName}</td>
+            <td>{data.lastName}</td>
+            <td>{data.participation}</td>
+          </tr>
+        ))}
       </tbody>
     </Tab>
   )
