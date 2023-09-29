@@ -1,7 +1,23 @@
 import { Tab } from './styles'
-import dados from '../../../api/dados.js'
+import { useState, useEffect } from 'react'
 
 export function Tabela() {
+  interface TiposDados {
+    id: number
+    firstName: string
+    lastName: string
+    participation: number
+  }
+
+  const [dados, setDados] = useState<TiposDados[]>([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/')
+      .then((response) => response.json())
+      .then((data) => setDados(data))
+      .catch((error) => console.error('Erro ao buscar dados da API:', error))
+  }, [])
+
   return (
     <Tab>
       <thead>

@@ -30,4 +30,5 @@ export const dados = [
     participation: '40%',
   },
 ]
+
 export default dados

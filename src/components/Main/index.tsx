@@ -1,7 +1,7 @@
 import { ContainerMain, ContainerTabelaGrafico } from './styles'
 
 import { Tabela } from '../Tabela'
-import Grafico from '../Grafico'
+import { Grafico } from '../Grafico'
 
 export function Main() {
   return (

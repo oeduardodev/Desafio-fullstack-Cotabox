@@ -2,7 +2,7 @@ import { ApexOptions } from 'apexcharts'
 import ReactApexChart from 'react-apexcharts'
 import { StyledChartContainer } from './styles'
 
-function Grafico() {
+export function Grafico() {
   const series = [20, 5, 20, 15, 40]
   const options: ApexOptions = {
     labels: [
@@ -56,5 +56,3 @@ function Grafico() {
     </StyledChartContainer>
   )
 }
-
-export default Grafico
