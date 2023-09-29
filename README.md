@@ -40,7 +40,7 @@ Para iniciar o ambiente de desenvolvimento, execute o seguinte comando:
 
 ```
 npm run dev
-nom run backend
+npm run backend
 ```
 
 Lembre-se de configurar corretamente o ambiente, incluindo variáveis de ambiente, se necessário, para que o projeto funcione conforme o esperado.
